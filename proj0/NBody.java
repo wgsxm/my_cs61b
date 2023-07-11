@@ -34,14 +34,14 @@ public class NBody
         StdDraw.enableDoubleBuffering();
         int arraySize = planets.length;
         double timestamp=0;
-        while(timestamp<T)
+        while(timestamp<=T)
         {
             double[] xForces=new double[arraySize];
             double[] yForces=new double[arraySize];
             for(int i=0;i<arraySize;i++)
             {
                 xForces[i]=planets[i].calcNetForceExertedByX(planets);
-                yForces[i]=planets[i].calcNetForceExertedByX(planets);
+                yForces[i]=planets[i].calcNetForceExertedByY(planets);
             }
             for(int i=0;i<arraySize;i++)
             {
