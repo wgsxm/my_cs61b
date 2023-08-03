@@ -8,9 +8,9 @@ public class LinkedListDeque <T> {
         public Node next;
         /**
          * Initializes a Node
-         * @param item
-         * @param prev
-         * @param next
+         * @param item the item of the Node
+         * @param prev the previous Node of the Node
+         * @param next the next Node of the Node
          */
         public Node(T item, Node prev, Node next)
         {
@@ -31,7 +31,7 @@ public class LinkedListDeque <T> {
     }
     /**
      * Adds an item of type T to the front of the deque
-     * @param item
+     * @param item the item to add to the front of the deque
      */
     public void addFirst (T item)
     {
@@ -49,8 +49,7 @@ public class LinkedListDeque <T> {
     }
 
     /**
-     * Determines whether the list is empty or not
-     * @return
+     * @return whether the deque is empty
      */
     public boolean isEmpty(){
         if(size==0)return true;
@@ -58,8 +57,7 @@ public class LinkedListDeque <T> {
     }
 
     /**
-     * Gets the size of the list
-     * @return
+     * @return the size of the list
      */
     public int size(){
         return size;
@@ -80,7 +78,7 @@ public class LinkedListDeque <T> {
 
     /**
      * remove the node and return its item. If empty, return null.
-     * @return
+     * @return the item of the first node if it exists, otherwise return null.
      */
     public T removeFirst()
     {
@@ -103,8 +101,8 @@ public class LinkedListDeque <T> {
 
     /**
      * Gets the item at the given index without altering the deque, using iteration
-     * @param index
-     * @return
+     * @param index the index of the wanted Node in the deque.
+     * @return the item of the given node.
      */
     public T get(int index)
     {
@@ -121,7 +119,7 @@ public class LinkedListDeque <T> {
 
     /**
      * Gets the item at the given index without altering the deque, but using recursion
-     * @param index
+     * @param index as followed
      * @return
      */
     public T getRecursive(int index)
