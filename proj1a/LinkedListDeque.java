@@ -133,7 +133,7 @@ public class LinkedListDeque<T> {
             return null;
         }
         if (index == 0) {
-            return sentinel.item;
+            return sentinel.next.item;
         } else {
             sentinel = sentinel.next;
             T ret = getRecursive(index - 1);
