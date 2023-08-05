@@ -1,4 +1,5 @@
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class TestPalindrome {
@@ -14,5 +15,48 @@ public class TestPalindrome {
             actual += d.removeFirst();
         }
         assertEquals("persiflage", actual);
+    }
+
+    @Test
+    public void testisPalindrome1() {
+        assertFalse(palindrome.isPalindrome("cat"));
+    }
+
+    @Test
+    public void testisPalindrome2() {
+        assertTrue(palindrome.isPalindrome("A"));
+    }
+
+    @Test
+    public void testisPalindrome3() {
+        assertTrue(palindrome.isPalindrome("AA"));
+    }
+
+    @Test
+    public void testisPalindrome4() {
+        assertFalse(palindrome.isPalindrome("Aa"));
+    }
+
+    static OffByOne cc = new OffByOne();
+
+    @Test
+    public void testisPalindrome5() {
+        assertTrue(palindrome.isPalindrome("a",cc));
+    }
+    @Test
+    public void testisPalindrome6() {
+        assertTrue(palindrome.isPalindrome("ab",cc));
+    }
+    @Test
+    public void testisPalindrome7() {
+        assertTrue(palindrome.isPalindrome("aab",cc));
+    }
+    @Test
+    public void testisPalindrome8() {
+        assertFalse(palindrome.isPalindrome("aa",cc));
+    }
+    @Test
+    public void testisPalindrome9() {
+        assertTrue(palindrome.isPalindrome("ba",cc));
     }
 }
