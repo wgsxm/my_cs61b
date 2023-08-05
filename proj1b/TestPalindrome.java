@@ -41,22 +41,26 @@ public class TestPalindrome {
 
     @Test
     public void testisPalindrome5() {
-        assertTrue(palindrome.isPalindrome("a",cc));
+        assertTrue(palindrome.isPalindrome("a", cc));
     }
+
     @Test
     public void testisPalindrome6() {
-        assertTrue(palindrome.isPalindrome("ab",cc));
+        assertTrue(palindrome.isPalindrome("ab", cc));
     }
+
     @Test
     public void testisPalindrome7() {
-        assertTrue(palindrome.isPalindrome("aab",cc));
+        assertTrue(palindrome.isPalindrome("aab", cc));
     }
+
     @Test
     public void testisPalindrome8() {
-        assertFalse(palindrome.isPalindrome("aa",cc));
+        assertFalse(palindrome.isPalindrome("aa", cc));
     }
+
     @Test
     public void testisPalindrome9() {
-        assertTrue(palindrome.isPalindrome("ba",cc));
+        assertTrue(palindrome.isPalindrome("ba", cc));
     }
 }
