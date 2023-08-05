@@ -18,6 +18,11 @@ public class TestPalindrome {
     }
 
     @Test
+    public void testisPalindrome0() {
+        assertTrue(palindrome.isPalindrome(""));
+    }
+
+    @Test
     public void testisPalindrome1() {
         assertFalse(palindrome.isPalindrome("cat"));
     }
@@ -63,4 +68,5 @@ public class TestPalindrome {
     public void testisPalindrome9() {
         assertTrue(palindrome.isPalindrome("ba", cc));
     }
+
 }
