@@ -28,4 +28,14 @@ public class TestOffByOne {
     public void testequalChars3() {
         assertFalse(offByOne.equalChars('a', 'B'));
     }
+
+    @Test
+    public void testequalChars3() {
+        assertTrue(offByOne.equalChars('&', '%'));
+    }
+
+    @Test
+    public void testequalChars3() {
+        assertFalse(offByOne.equalChars('&', ')'));
+    }
 }
