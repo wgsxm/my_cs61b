@@ -30,12 +30,12 @@ public class TestOffByOne {
     }
 
     @Test
-    public void testequalChars3() {
+    public void testequalChars4() {
         assertTrue(offByOne.equalChars('&', '%'));
     }
 
     @Test
-    public void testequalChars3() {
+    public void testequalChars5() {
         assertFalse(offByOne.equalChars('&', ')'));
     }
 }
